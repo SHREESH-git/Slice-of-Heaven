@@ -508,13 +508,12 @@ body {
 
 #footer h6 {
   text-align: center;
-  font-size: 1.8rem;
-  padding: 2.6rem;
+  font-size: 0.8rem;
+  padding: 1.5rem;
   font-weight: 500;
   color: #fff;
   background: rgb(65, 65, 65);
 }
-
 /* ......../ media query /.......... */
 
 @media (max-width: 768px) {
