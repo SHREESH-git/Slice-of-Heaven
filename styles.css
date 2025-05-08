@@ -121,7 +121,7 @@ body {
 .showcase-area {
   height: 100vh;
   background: 
-    url("back.jpg"); /* Add your background image here */
+    url("./Images/back.jpg"); /* Add your background image here */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,6 +176,7 @@ body {
   padding: 30px;
   transform: translateX(150%);
   animation: about-img-animation 1s ease-in-out forwards;
+
 }
 .about-img, .about-text {
     will-change: transform;
@@ -209,6 +210,9 @@ body {
   margin: auto;
   object-fit: cover;
   object-position: right;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
 }
 
 /* ..........////Food category///........... */
@@ -440,18 +444,30 @@ body {
   
   .booking-form button {
     align-self: flex-end;
-    background-color: #d9b44a;
-    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    background-color: #c2a48e;
+    
   }
   
   .booking-form button:hover {
-    background-color: #bfa23c;
+    background: #c49b63;
+    transition: background 0.3s ease-in-out;
+    color: #000;
+    border: 0px;
   }
   
+  .booking-form button:primary {
+  
+    
+    size: ;
+    
+  
+  }
+  
+
 
 /* ........ Contact Us........... */
 
@@ -525,7 +541,7 @@ body {
   padding: 1.5rem;
   font-weight: 500;
   color: #fff;
-  background: rgb(65, 65, 65);
+  background: #cdbea1;
 }
 /* ......../ media query /.......... */
 
