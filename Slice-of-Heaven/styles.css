@@ -10,12 +10,13 @@
 
 html {
     font-size: clamp(14px, 1.5vw, 18px);
-    background-color: #eee9e0;
+    background-color: #fffaf0;
   }
   
 
 body {
   font-family: "Poppins", sans-serif;
+  
 }
 
 /* ///////////..utility classes../////////// */
@@ -24,7 +25,7 @@ body {
   max-width: 1200px;
   width: 90%;
   margin: auto;
-}
+} 
 
 .btn {
   display: inline-block;
@@ -36,16 +37,21 @@ body {
   margin-top: 1em;
   text-transform: uppercase;
   font-weight: small;
+  border: 2px solid #c49b63;
 }
 
 .btn-primary {
-  color: #fff;
-  background: #16a083;
+  
+  color: #c49b63;
+  size: ;
+
 }
 
 .btn-primary:hover {
-  background: #117964;
+  background: #c49b63;
   transition: background 0.3s ease-in-out;
+  color: #000;
+  border: 0px;
 }
 
 /* ............/navbar/............ */
@@ -97,13 +103,13 @@ body {
 }
 
 .menu-items a:hover {
-  color: #117964;
+  color: #c49b63;
   transition: color 0.3s ease-in-out;
 }
 
 .logo img {
-    height: 80px; /* adjust as needed */
-    width: auto;
+    height: 125px; /* adjust as needed */
+    width: 150px;
     margin-left: 1rem;
   }
   
@@ -113,12 +119,9 @@ body {
 /* ............//// Showcase styling ////......... */
 
 .showcase-area {
-  height: 50vh;
-  background: linear-gradient(
-      rgba(240, 240, 240, 0.144),
-      rgba(255, 255, 255, 0.336)
-    ),
-    url(""); /* Add your background image here */
+  height: 100vh;
+  background: 
+    url("./Images/back.jpg"); /* Add your background image here */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,18 +134,21 @@ body {
   justify-content: center;
   height: 100%;
   font-size: 1.6rem;
+
 }
 
 .main-title {
   text-transform: uppercase;
   margin-top: 1.5em;
+  color: #c49b63;
+  font-family: ;
 }
 
 /* ......//about us//...... */
 
 #about {
   padding: 50px 0;
-  background: #f5f5f7;
+  background: #fff;
 }
 
 .about-wrapper {
@@ -170,6 +176,7 @@ body {
   padding: 30px;
   transform: translateX(150%);
   animation: about-img-animation 1s ease-in-out forwards;
+
 }
 .about-img, .about-text {
     will-change: transform;
@@ -203,6 +210,9 @@ body {
   margin: auto;
   object-fit: cover;
   object-position: right;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
 }
 
 /* ..........////Food category///........... */
@@ -223,20 +233,24 @@ body {
 .food-container {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .food-container img {
   display: block;
-  width: 100%;
+  width: 300px;
   margin: auto;
   max-height: 300px;
   object-fit: cover;
   object-position: center;
+  border-radius: 50%;
 }
 
 .img-container {
   margin: 0 1rem;
   position: relative;
+  
+  
 }
 
 .img-content {
@@ -248,11 +262,13 @@ body {
   z-index: 2;
   text-align: center;
   transition: all 0.3s ease-in-out 0.1s;
+  
 }
 
 .img-content h3 {
   color: #fff;
   font-size: 2.2rem;
+
 }
 
 .img-content a {
@@ -274,6 +290,7 @@ body {
   transform: scaleY(0);
   transform-origin: 100% 100%;
   transition: all 0.3s ease-in-out;
+  border-radius: 50%;
 }
 
 .img-container:hover::after {
@@ -299,7 +316,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 50px 0px 30px 0px;
-  background-color: #EFE9D5;
 }
 
 .food-menu-container img {
@@ -335,7 +351,7 @@ body {
 }
 
 .food-description .food-price {
-  color: #117964;
+  color: #c49b63;
   font-weight: 700;
 }
 
@@ -343,7 +359,7 @@ body {
 
 #testimonials {
   padding: 5rem 0;
-  background: rgba(243, 243, 243);
+  background: #fff;
 }
 
 .testimonial-title {
@@ -354,6 +370,7 @@ body {
 }
 
 .testimonial-container {
+  box-shadow: 0px 10px 10px 0px #d899d4;
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
@@ -386,65 +403,77 @@ body {
 }
 /* ......... Table-Booking......... */
 #table-booking {
-    background-color: #fffaf0; /* same soft background */
-    padding: 40px;
-    text-align: center;
-  }
+  background-color: #fffaf0;
+  padding: 40px;
+  text-align: center;
+}
+
+.booking-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f4e8d6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc8b4;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.booking-form button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #c2a48e;
+}
+
+.booking-form button:hover {
+  background: #c49b63;
+  transition: background 0.3s ease-in-out;
+  color: #000;
+}
+
+.booking-form button.primary {
+  background-color: #a17852;
+  color: white;
+}
+
+.booking-form button.primary:hover {
+  background-color: #8b6844;
+}
+
   
-  .booking-container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .booking-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background-color: #f4e8d6;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #2e2e2e;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc8b4;
-    border-radius: 5px;
-    font-size: 1em;
-  }
-  
-  .booking-form button {
-    align-self: flex-end;
-    background-color: #d9b44a;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .booking-form button:hover {
-    background-color: #bfa23c;
-  }
-  
+
 
 /* ........ Contact Us........... */
 
 #contact {
   padding: 5rem 0;
-  background: rgb(226, 226, 226);
+  background: #fff;
 }
 
 .contact-container {
@@ -454,14 +483,17 @@ body {
 
 .contact-img {
   width: 50%;
+  border-radius: 10%;
 }
 
 .contact-img img {
   display: block;
-  height: 400px;
-  width: 100%;
-  object-position: center;
+  margin: auto;
   object-fit: cover;
+  object-position: left;
+  border-radius: 10%;
+  width: 90%;
+  height: 90%;
 }
 
 .form-container {
@@ -505,14 +537,22 @@ body {
 .form-container a {
   font-size: 1.3rem;
 }
+.form-container: btn-primary{
+  background color: #4CAF50;
+  color: 
+}
 
 #footer h6 {
   text-align: center;
-  font-size: 1.8rem;
-  padding: 2.6rem;
+  font-size: 0.8rem;
+  padding: 1.5rem;
   font-weight: 500;
   color: #fff;
-  background: rgb(65, 65, 65);
+  background-image: url("./Images/footer.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;     
+  background-position: center; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 /* ......../ media query /.......... */
