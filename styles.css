@@ -37,12 +37,12 @@ body {
   margin-top: 1em;
   text-transform: uppercase;
   font-weight: small;
-  border: 2px solid #fffaf0;
+  border: 2px solid #c49b63;
 }
 
 .btn-primary {
   
-  color: #fffaf0;
+  color: #c49b63;
   size: ;
 
 }
@@ -103,7 +103,7 @@ body {
 }
 
 .menu-items a:hover {
-  color: #117964;
+  color: #c49b63;
   transition: color 0.3s ease-in-out;
 }
 
@@ -140,7 +140,7 @@ body {
 .main-title {
   text-transform: uppercase;
   margin-top: 1.5em;
-  color: #ffffff;
+  color: #c49b63;
   font-family: ;
 }
 
@@ -351,7 +351,7 @@ body {
 }
 
 .food-description .food-price {
-  color: #117964;
+  color: #c49b63;
   font-weight: 700;
 }
 
@@ -533,6 +533,10 @@ body {
 
 .form-container a {
   font-size: 1.3rem;
+}
+.form-container: btn-primary{
+  background color: #4CAF50;
+  color: 
 }
 
 #footer h6 {
