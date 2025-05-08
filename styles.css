@@ -37,17 +37,21 @@ body {
   margin-top: 1em;
   text-transform: uppercase;
   font-weight: small;
+  border: 2px solid #fffaf0;
 }
 
 .btn-primary {
-  color: #fff;
-  background: #16a083;
+  
+  color: #fffaf0;
   size: ;
+
 }
 
 .btn-primary:hover {
-  background: #117964;
+  background: #c49b63;
   transition: background 0.3s ease-in-out;
+  color: #000;
+  border: 0px;
 }
 
 /* ............/navbar/............ */
